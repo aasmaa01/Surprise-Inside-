@@ -101,20 +101,23 @@ body {
   display: block;
   margin-top: 10px;
 }
-
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .container {
-    width: 100%; /* Make the container width responsive */
-    height: auto; /* Adjust height */
-    padding: 1em; /* Add padding for spacing */
+    width: 90%; /* Take most of the screen width */
+    height: auto; /* Allow height to adjust dynamically */
   }
 
   .card {
-    width: 100%; /* Adjust card to fit smaller screens */
-    height: auto; /* Adjust card height for content */
+    width: 100%; /* Full width of the container */
+    height: auto;
   }
 
   .birthday-text {
-    font-size: 14px; /* Adjust font size for readability */
+    font-size: 14px; /* Slightly smaller text for phones */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  .front, .back {
+    padding: 10px; /* Reduce padding for small screens */
   }
 }
