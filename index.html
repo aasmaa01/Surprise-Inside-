@@ -37,10 +37,18 @@
       </div>
       
     </div>
-    <script>
-      document.querySelector('.card').addEventListener('click', function() {
-      this.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
-    });
+    <script><script>
+  const card = document.querySelector('.card');
+  card.addEventListener('click', () => {
+    const cardInner = card.querySelector('.card-inner');
+    if (cardInner.style.transform === 'rotateY(180deg)') {
+      cardInner.style.transform = 'rotateY(0deg)'; // Flip back
+    } else {
+      cardInner.style.transform = 'rotateY(180deg)'; // Flip front
+    }
+  });
+</script>
+
     </script>
   </body>
 </html>
