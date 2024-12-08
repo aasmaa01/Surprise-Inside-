@@ -59,6 +59,7 @@ body {
   padding: 20px;
   overflow: hidden;
   box-sizing: border-box;
+  flex-direction: column; 
 }
 
 /* Front Side */
@@ -99,4 +100,21 @@ body {
   font-size: 12px; /* Smaller size */
   display: block;
   margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 100%; /* Make the container width responsive */
+    height: auto; /* Adjust height */
+    padding: 1em; /* Add padding for spacing */
+  }
+
+  .card {
+    width: 100%; /* Adjust card to fit smaller screens */
+    height: auto; /* Adjust card height for content */
+  }
+
+  .birthday-text {
+    font-size: 14px; /* Adjust font size for readability */
+  }
 }
