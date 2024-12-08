@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-
     <title>Surprise Inside!</title>
     
     <link
@@ -37,18 +36,11 @@
       </div>
       
     </div>
-    <script><script>
-  const card = document.querySelector('.card');
-  card.addEventListener('click', () => {
-    const cardInner = card.querySelector('.card-inner');
-    if (cardInner.style.transform === 'rotateY(180deg)') {
-      cardInner.style.transform = 'rotateY(0deg)'; // Flip back
-    } else {
-      cardInner.style.transform = 'rotateY(180deg)'; // Flip front
-    }
-  });
-</script>
-
+    <script>
+      document.querySelector('.card').addEventListener('click', function () {
+        this.classList.toggle('flip'); // Add or remove "flip" class
+      });
+      
     </script>
   </body>
 </html>
