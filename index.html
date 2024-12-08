@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Surprise Inside!</title>
     
     <link
@@ -35,5 +36,10 @@
       </div>
       
     </div>
+    <script>
+      document.querySelector('.card').addEventListener('click', function() {
+      this.querySelector('.card-inner').style.transform = 'rotateY(180deg)';
+    });
+    </script>
   </body>
 </html>
